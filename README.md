@@ -7,6 +7,45 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+
+
+## Team Project Management System - Advanced Task API
+## Overview
+This is a Task Management System API built using Laravel, providing advanced features like task dependencies, real-time notifications, performance analysis reports, and enhanced security measures such as JWT authentication, role-based access control, and rate limiting.
+
+The system allows users to manage tasks efficiently by assigning them to specific users, tracking their status, adding comments and attachments, and generating reports for performance analysis.
+
+
+## Features
+-- Task Types: Support for Bug, Feature, and Improvement task types.
+--Task Status: Track task status through Open, In Progress, Completed, and Blocked.
+--Task Dependencies: Implement task dependencies so tasks can be Blocked if other tasks they depend on are not completed.
+-- Comment System: Polymorphic comment feature to add comments to tasks.
+-- Attachments: Polymorphic attachment feature to handle files associated with tasks.
+-- Task History: Track task status changes using TaskStatusUpdate.
+-- User Role Management: Role-based authorization to restrict user actions based on their assigned role (Admin, Manager, Developer, Tester).
+
+ ### 1.Requirements
+
+Before that, make sure you have the following installed:
+
+- PHP 7.4 or higher
+- Composer (dependencies manager for PHP)
+- Node.js and npm (to manage JavaScript dependencies)
+- MySQL (or other supported database system)
+-Postman (for testing the API) or Swagger
+
+### Installation
+1. git clone <https://github.com/Youssef2524/Task-Management-API.git>
+2. composer install
+3. Rename or copy .env.example file to .env
+4. php artisan key:generate
+5. php artisan migrate 
+6. php artisan db:seed 
+7. php artisan serve
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
